@@ -24,5 +24,5 @@ loss 0.2341
 accuracy 0.9392
 
 model_06
-loss 0.2540
-accuracy 0.9432
+loss 0.1891
+accuracy 0.96.78
