@@ -14,3 +14,7 @@ accuracy 0.7736
 model_03
 loss 0.4545
 accuracy 0.8602
+
+model_04
+loss 0.2972
+accuracy 0.9210
