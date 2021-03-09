@@ -87,7 +87,7 @@ def get_model():
     The output layer should have `NUM_CATEGORIES` units, one for each category.
     """
     
-    # model_04
+    # model_05
 
     # Create a convolutional neural network
     model = tf.keras.models.Sequential([
@@ -109,7 +109,7 @@ def get_model():
         tf.keras.layers.Flatten(),
 
         # Add a hidden layer with dropout
-        tf.keras.layers.Dense(256, activation="relu"),
+        tf.keras.layers.Dense(512, activation="relu"),
         tf.keras.layers.Dropout(0.5),
 
         # Add a hidden layer with dropout
