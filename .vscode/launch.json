@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/traffic.py",
-            "args": ["gtsrb-small"],
+            "args": ["gtsrb", "output_models/model_01"],
             "console": "integratedTerminal"
         }
     ]
