@@ -1,6 +1,6 @@
-#Traffic
+# Traffic
 
-###CS50 AI Exercise 5
+### CS50 AI Exercise 5
 
 Experimentation using tensor flow to create convolutional neural network for categoridation of German Traffic Sign Recognition Benchmark (GTSRB) dataset.
 
