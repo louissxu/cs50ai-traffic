@@ -5,9 +5,9 @@
 Experimentation using tensor flow to create convolutional neural network for categoridation of German Traffic Sign Recognition Benchmark (GTSRB) dataset.
 
 Usage:
-'''python
+```python
 python traffic.py data_directory [model.h5]
-'''
+```
 
 Starting naive model:
 - 2D Convolution: 32, (3, 3), relu
