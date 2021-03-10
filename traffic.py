@@ -66,16 +66,19 @@ def load_data(data_dir):
     global NUM_CATEGORIES
     NUM_CATEGORIES = 0
 
+    print(f"Loading data from: {ROOT_DIR}")
+
     # for category in range(0, NUM_CATEGORIES):
     for category in os.listdir(os.path.join(ROOT_DIR, data_dir)):  # Switch to index categories rather than use hardcoded NUM_CATEGORIES
         NUM_CATEGORIES += 1
         category_dir = os.path.join(ROOT_DIR, data_dir, str(category))
-        print(category)
+        print(f"Loading: {category_dir}")
         for filename in os.listdir(category_dir):
             img = cv2.imread(os.path.join(category_dir, filename))
             resized_image = cv2.resize(img, (IMG_WIDTH, IMG_HEIGHT), interpolation = cv2.INTER_AREA)
             return_images.append(resized_image)
             return_labels.append(category)
+    print("Finished loading data.")
 
     return (return_images, return_labels)
 
