@@ -4,12 +4,12 @@
 
 Experimentation using tensor flow to create convolutional neural network for categoridation of German Traffic Sign Recognition Benchmark (GTSRB) dataset.
 
-Usage:
+##### Usage:
 ```python
 python traffic.py data_directory [model.h5]
 ```
 
-Starting naive model:
+##### Starting naive model:
 - 2D Convolution: 32, (3, 3), relu
 - Max pool: (2, 2)
 - Neural network:
@@ -17,7 +17,7 @@ Starting naive model:
   - 43 output nodes, softmax
 - **Accuracy 0.0561**
 
-Final model:
+##### Final model:
 - 2D Convolution: 32, (3, 3), relu
 - Max pool: (2, 2)
 - 2D Convolution: 64, (3, 3), relu
