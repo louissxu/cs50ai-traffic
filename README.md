@@ -1,28 +1,26 @@
+#Traffic
 
+###CS50 AI Exercise 5
 
+Experimentation using tensor flow to create convolutional neural network for categoridation of German Traffic Sign Recognition Benchmark (GTSRB) dataset.
 
-Raw output data:
+Usage:
+python traffic.py data_directory [model.h5]
 
-model_01
-loss 3.5012
-accuracy 0.0561
+Starting naive model:
+- 2D Convolution: 32, (3, 3), relu
+- Max pool: (2, 2)
+- Neural network:
+  - 128 nodes, relu, dropout 0.5
+  - 43 output nodes, softmax
+Accuracy 0.0561
 
-model_02
-loss 0.6729
-accuracy 0.7736
-
-model_03
-loss 0.4545
-accuracy 0.8602
-
-model_04
-loss 0.2972
-accuracy 0.9210
-
-model_05
-loss 0.2341
-accuracy 0.9392
-
-model_06
-loss 0.1891
-accuracy 0.96.78
+Final model:
+- 2D Convolution: 32, (3, 3), relu
+- Max pool: (2, 2)
+- 2D Convolution: 64, (3, 3), relu
+- Neural network:
+  - 128 nodes, relu, dropout 0.5
+  - 128 nodes, relu, dropout 0.5
+  - 43 output nodes, softmax
+Accuracy 0.9678
